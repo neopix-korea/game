@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아케이드 게임 포털</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0f0f13;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            background: linear-gradient(45deg, #00ffcc, #ff0077);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+        p {
+            color: #888;
+            font-size: 15px;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 960px;
+        }
+        .card {
+            background: #1a1a24;
+            border: 1px solid #2a2a3d;
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffcc;
+            box-shadow: 0 8px 20px rgba(0, 255, 204, 0.2);
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #00ffcc;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .card-footer {
+            font-size: 13px;
+            font-weight: bold;
+            color: #ff0077;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .card-footer::after {
+            content: "→";
+            transition: transform 0.2s ease;
+        }
+        .card:hover .card-footer::after {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ARCADE PORTAL</h1>
+        <p>웹 브라우저로 즐기는 미니 아케이드 게임 모음</p>
+    </header>
+
+    <div class="container">
+        <!-- Game 1 -->
+        <a href="game1.html" class="card">
+            <div>
+                <div class="card-title">GAME 01</div>
+                <div class="card-desc">사운드와 함께 즐기는 클래식 벽돌깨기 게임. 패들을 움직여 모든 벽돌을 부숴보세요!</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+
+        <!-- Game 2 -->
+        <a href="game2.html" class="card">
+            <div>
+                <div class="card-title">GAME 02</div>
+                <div class="card-desc">두 번째 미니 게임을 준비 중입니다. 새로운 재미가 곧 추가됩니다.</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+
+        <!-- Game 3 -->
+        <a href="game3.html" class="card">
+            <div>
+                <div class="card-title">GAME 03</div>
+                <div class="card-desc">세 번째 미니 게임을 위한 빈 공간입니다. 파일명을 맞춰 추가해 보세요.</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+
+        <!-- Game 4 -->
+        <a href="game4.html" class="card">
+            <div>
+                <div class="card-title">GAME 04</div>
+                <div class="card-desc">네 번째 미니 게임을 위한 빈 공간입니다. 파일명을 맞춰 추가해 보세요.</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+
+        <!-- Game 5 -->
+        <a href="game5.html" class="card">
+            <div>
+                <div class="card-title">GAME 05</div>
+                <div class="card-desc">다섯 번째 미니 게임을 위한 빈 공간입니다. 파일명을 맞춰 추가해 보세요.</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+
+        <!-- Game 6 -->
+        <a href="game6.html" class="card">
+            <div>
+                <div class="card-title">GAME 06</div>
+                <div class="card-desc">여섯 번째 미니 게임을 위한 빈 공간입니다. 파일명을 맞춰 추가해 보세요.</div>
+            </div>
+            <div class="card-footer">플레이하기</div>
+        </a>
+    </div>
+
+</body>
+</html>
